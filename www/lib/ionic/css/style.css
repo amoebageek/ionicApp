@@ -1,1 +1,28 @@
-.container{margin-top: 62px;}
+/* Empty. Add your own CSS if you like */
+.container{
+	margin-top: 62px;
+}
+a .nav-menue{
+	color: black;
+    font-size: 100%;
+
+    text-decoration: none;
+}
+.nav-item{
+	border-left: thin double grey;
+    display: inline;
+    margin-bottom: 15%;
+    margin-left: 9%;
+    margin-top: -26%;
+    padding-bottom: 2%;
+    padding-left: 13%;
+    padding-top: 5%;
+}
+.menue-icon{
+	width : 28px;
+}
+.oops{
+    margin-left: 2%;
+    margin-top: 58%;
+    text-align: center;
+}

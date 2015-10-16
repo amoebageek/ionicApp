@@ -2,3 +2,24 @@
 .container{
 	margin-top: 66px;
 }
+a .nav-menue{
+	color: black;
+    font-size: 100%;
+
+    text-decoration: none;
+}
+.nav-item{
+	border-left: thin double grey;
+    display: inline;
+    float: right;
+    margin-bottom: 15%;
+    margin-left: 9%;
+    margin-top: -26%;
+    padding-bottom: 2%;
+    padding-left: 13%;
+    padding-top: 5%;
+}
+.oops{
+    margin-left: 2%;
+    margin-top: 58%;
+}
