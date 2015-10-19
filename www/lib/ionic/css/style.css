@@ -26,3 +26,58 @@ a .nav-menue{
     margin-top: 58%;
     text-align: center;
 }
+.nv__parent .item{
+    padding: 0;
+}
+.nv__parent .item a{
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color:black;
+}
+.footer__btn__parent{
+    width:100%;
+}
+.footer__btn__parent .footer__btn__child{
+    left: 0;
+    right: 0;
+    width: 49%;
+    background-color: white;
+    border: medium none;
+}
+.footer__btn__parent .footer__btn__child:last-child{
+    border-left: solid 1px Grey;
+}
+a.button-facebook {
+    background-color: #3B5999; /* fallback color */
+    color: white;
+}
+
+a.button-facebook:hover {
+    background-color: #3B5999; /* fallback color */
+    color: white;
+  
+}
+
+
+a.button-googleplus {
+    background-color: #DF4A32;
+    color: white;
+}
+
+a.button-googleplus:hover {
+    background-color: #DF4A32; /* fallback color */
+    color: white;
+    
+}
+a.button-nativ-login{
+    background-color: #DF4A32;
+    color: white;
+}
+a.button-nativ-login:hover {
+    background-color: #DF4A32;
+    color: white;
+}
+/*.welcome-screen{
+    background-image: url'img/bg1.jpg'); 
+}*/

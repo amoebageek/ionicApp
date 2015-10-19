@@ -1,33 +1,64 @@
+<div class="bar bar-header bar-assertive" ng-controller="baseCtrl">
+		<button class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></button>	
+	 	<h1 class="title" >{{title}}</h1>
+	 	<button class="button" href="#/logout">
+	 		<i class="fa fa-sign-out"></i>
+	 	</button>
+	</div>	
 <ion-side-menus>
 		<ion-side-menu side="left">
 		    <div class="container">
-		  		<a class="item item-avatar" href="#">
+		  		<a class="item item-avatar" href="#/">
       				<img src="img/avtar.png"> Anujay Kumar
       			</a>
 		    </div>
-		    <ul class="list ">
+		    <ul class="list nv__parent">
 				   	<li class="item">
-			   			<i class="fa fa-book fa-2x"></i>
-			   				<div class="nav-item"><a href="#course">Course</a></div>
+			   			<a href="#/courses">
+			   				<i class="fa fa-book fa-2x"></i>
+			   				<div class="nav-item">Course</div>
+			   			</a>
 				   	</li>
 				   	<li class="item">
-				   		<i class="fa fa-tasks fa-2x"></i>
-				   			<div class="nav-item">Results</div>
+			   			<a href="#/result">
+			   				<i class="fa fa-tasks fa-2x"></i>
+			   				<div class="nav-item">Results</div>
+			   			</a>
 				   	</li>
-				  	<li class="item">
-				  		<i class="fa fa-dollar fa-2x"></i>
-				  			<div class="nav-item">Transactions</div>
-				  	</li>
-				  	<li class="item">
-				  		<i class="fa fa-credit-card fa-2x"></i> 
-				  			<div class="nav-item">My Cards</div>
-				  	</li>
-				  	<li class="item">
-				  		<i class="fa fa-question-circle fa-2x"></i>
-				  			<div class="nav-item">Contact</div>
-				  	</li>
+				   	<li class="item">
+			   			<a href="#/transactions">
+			   				<i class="fa fa-dollar fa-2x"></i>
+			   				<div class="nav-item">Transactions</div>
+			   			</a>
+				   	</li>
+				   	<li class="item">
+			   			<a href="#/cards">
+			   				<i class="fa fa-credit-card fa-2x"></i>
+			   				<div class="nav-item">My Cards</div>
+			   			</a>
+				   	</li>
+					<li class="item">
+						<a href="#/contact">
+							<i class="fa fa-question-circle fa-2x"></i>
+							<div class="nav-item">Contact</div>
+						</a>
+					</li>				  
 			</ul>
 		</ion-side-menu>
+	<!-- 	<div class="oops">
+			<p><h4>Daashboard!</h4></p>
+			<p>Welcome to the dashboard.</p>
+		</div>
+ -->
+ <ion-side-menu-content edge-drag-threshold="true" drag-content="true">
+  <!--  <h2>Side Menu</h2 > -->
+	<div class="" >
+		
+
+			<ion-nav-view></ion-nav-view>
 
 		
+	</div>
+</ion-side-menu-content>
+
 </ion-side-menus>

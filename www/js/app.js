@@ -1,34 +1,67 @@
 		
-var myApp=angular.module("myModule",['ionic','ui.router'])
+var myApp=angular.module("myModule",['ionic','ui.router','Login_Ctrl'])
 	
 	.config(["$stateProvider","$urlRouterProvider",function ($stateProvider,$urlRouterProvider) {
 			
-		$urlRouterProvider
-			.otherwise('oops');
+		
 		$stateProvider
+		    /*.state('main',{
+		        	url:"/main",
+		        	templateUrl:'templates/oops.html',
+		        	controller:'baseCtrl'
+		        })*/
+
+		    .state('login',{
+		        	url:"/login",
+		        	templateUrl:'templates/login.html',
+		        	controller:'loginCtrl'
+		        })
+		    .state('logout',{
+		        	url:"/logout",
+		        	templateUrl:'templates/logout.html',
+		        	controller:'baseCtrl'
+		        })
 		    .state('dashboard',{
 		        	url:"/dashboard",
-		        	templateUrl:'templates/dashboard.html',
-		        	controller:"myCtrl"
+		        	templateUrl:'templates/menue.html',
+		        	controller:'baseCtrl'
 		        })
 		    .state('courses',{
 		        	url:'/courses',
 		        	templateUrl:'templates/courses.html',
-		        	controller:'myCtrl'
+		        	controller:'baseCtrl'
+		        })
+		    /*.state('result',{
+		        	url:'/result',
+		        	templateUrl:'templates/results.html',
+		        	controller:'baseCtrl'
 		        })
 		    .state('transactions',{
 		        	url:'/transactions',
-		        	templateUrl:'templates/transactions.html'
+		        	templateUrl:'templates/transactions.html',
+		        	controller:'baseCtrl'
 		        })
+		    .state('cards',{
+		        	url:'/cards',
+		        	templateUrl:'templates/cards.html',
+		        	controller:'baseCtrl'
+		        }) 
+		    .state('contact',{
+		        	url:'/contact',
+		        	templateUrl:'templates/contact.html',
+		        	controller:'baseCtrl'
+		        })*/
 		    .state('oops',{
 		    	url:'/oops',
 		    	templateUrl:'templates/oops.html',
-		    	controller:'myCtrl'
+		        controller:'baseCtrl'
 		    })
+	    $urlRouterProvider
+			.otherwise('oops');
 		}])
 
 
-	.controller("myCtrl",["$scope","$ionicSideMenuDelegate",function($scope,$ionicSideMenuDelegate) {
+	.controller("baseCtrl",["$scope","$ionicSideMenuDelegate",function($scope,$ionicSideMenuDelegate) {
 	 
 		$scope.toggleLeft = function() {
 		    $ionicSideMenuDelegate.toggleLeft();
@@ -36,5 +69,6 @@ var myApp=angular.module("myModule",['ionic','ui.router'])
 		$scope.title="My App";
 		
 	}]);
+	
 
 	
