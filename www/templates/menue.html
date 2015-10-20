@@ -1,7 +1,7 @@
 <div class="bar bar-header bar-assertive" ng-controller="baseCtrl">
 		<button class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></button>	
 	 	<h1 class="title" >{{title}}</h1>
-	 	<button class="button" href="#/logout">
+	 	<button class="button" ng-click="logOut();">
 	 		<i class="fa fa-sign-out"></i>
 	 	</button>
 	</div>	
@@ -14,31 +14,31 @@
 		    </div>
 		    <ul class="list nv__parent">
 				   	<li class="item">
-			   			<a href="#/courses">
+			   			<a ui-sref="menue.courses">
 			   				<i class="fa fa-book fa-2x"></i>
 			   				<div class="nav-item">Course</div>
 			   			</a>
 				   	</li>
 				   	<li class="item">
-			   			<a href="#/result">
+			   			<a ui-sref="menue.result">
 			   				<i class="fa fa-tasks fa-2x"></i>
 			   				<div class="nav-item">Results</div>
 			   			</a>
 				   	</li>
 				   	<li class="item">
-			   			<a href="#/transactions">
+			   			<a ui-sref="menue.transactions">
 			   				<i class="fa fa-dollar fa-2x"></i>
 			   				<div class="nav-item">Transactions</div>
 			   			</a>
 				   	</li>
 				   	<li class="item">
-			   			<a href="#/cards">
+			   			<a ui-sref="menue.cards">
 			   				<i class="fa fa-credit-card fa-2x"></i>
 			   				<div class="nav-item">My Cards</div>
 			   			</a>
 				   	</li>
 					<li class="item">
-						<a href="#/contact">
+						<a ui-sref="menue.contact">
 							<i class="fa fa-question-circle fa-2x"></i>
 							<div class="nav-item">Contact</div>
 						</a>
@@ -54,7 +54,7 @@
   <!--  <h2>Side Menu</h2 > -->
 	<div class="" >
 		
-
+			
 			<ion-nav-view></ion-nav-view>
 
 		
