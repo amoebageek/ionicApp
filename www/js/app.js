@@ -31,8 +31,8 @@ var myApp=angular.module("myModule",['ionic','ui.router','Login_Ctrl'])
 		        	templateUrl:'templates/courses.html',
 		        	controller:'baseCtrl'
 		        })
-		    .state('menue.courses.lectures',{
-		    	   url:'/lectures/:id',
+		    .state('menue.courses-detail',{
+		    	   url:'/courses/:id',
 		    	   templateUrl:'templates/lectures.html'
 		    	 /*  templateUrl:function ($stateParams) {
 		    	   			return 'templates/lectures.html';

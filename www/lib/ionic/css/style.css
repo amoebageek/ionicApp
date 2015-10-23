@@ -80,7 +80,7 @@ a.button-nativ-login:hover {
 }
 
 .left-thumb{    
-{
+
     height: 100%;
     left: 10px;
     max-height: 80px;
@@ -88,5 +88,12 @@ a.button-nativ-login:hover {
     position: absolute;
     top: 10px;
     width: 100%;
+
 }
+
+.icon-list-footer{
+    font-size: 14px;
+    padding-right: 15%;
+    padding-top: 4%;
+    float: left;
 }
